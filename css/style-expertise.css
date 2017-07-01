@@ -1,0 +1,223 @@
+* {padding:0; margin:0;}
+
+body { background-image:url(images/1voHP_1150x150.png); background-repeat:repeat-x; height:100px}
+
+/*HEADER*/
+#header_wrapper {width: 950px; margin:auto}
+header {height:100px}
+#left_header {float:left; width: 200px;}
+#left_header img {padding-top: 20px; width:200px;}
+#right_header {float:right; height:40px; width:750px; }
+.right-header-top {float:right; height:40px; width:750px; text-align:center; margin-top:15px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#092e55}
+
+#right_header li {
+  list-style: none;
+  float: left;
+  line-height: 54px;
+  width: 120px;
+  text-align: center;
+}
+#right_header li a {text-decoration:none; font-size:20px; color:#000; display:block; transition:all 0.5s ease; }
+#right_header li a:hover {color:#F00; text-decoration:underline } 
+
+#right_header .home-menu {
+  margin-left: 22px;
+}
+
+/*CONTENT*/
+.title {
+  background: url(images/banner_header_pattern.gif) center;
+  width: 963px;
+  margin: 55px auto 30px auto;
+  padding: 0px 0px 0px 16px;
+  font-size: 30px;
+  font-family: "OpenSansLight";
+  color: #29439c;
+}
+.content2 {
+  position: relative;
+  width: 978px;
+  margin: 0 auto;
+}
+.content2 p {
+  display: block;
+  padding: 20px 0px 0px 40px;
+  float: left;
+  color: #2f2f2f;
+  line-height: 24px;
+}
+.middle2 {
+  padding: 30px 0 0 0;
+  background: #eee url(../images/material/bg-aboutus.png) center no-repeat;
+  margin: auto;
+  width: 950px;
+}
+.middle2 .floating {
+  margin: auto;
+  width: 950px;
+}
+.middle2 .floating .box {
+  background: url(../images/material/bg-expertise-float.png) center 0px no-repeat;
+  float: left;
+  width: 305px;
+  height: 360px;
+  text-align: center;
+}
+.middle2 .floating .box h5 {
+  font-size: 18px;
+  color: #29439c;
+  font-family: "OpenSansBold";
+  margin: 0px 0px 10px 20px;
+}
+.middle2 .floating .box ul li {
+  font-size: 13px;
+  margin-left: 25px;
+}
+.middle2 .shadow {
+  width: 950px;
+  margin: auto;
+}
+.subtitle {
+  font-size: 18px;
+  color: #29439c;
+  margin-bottom: 25px;
+  width:950px;
+  margin:auto;
+}
+.subtitle p {
+  line-height: 24px;
+  margin-top: 30px;
+  margin-bottom:30px;
+  padding-left:90px;
+}
+.shadow img {
+	width:950px;
+}
+
+
+
+
+/*FOOTER*/
+#footer {
+  position: relative;
+}
+#footer .content {
+  width: 980px;
+}
+.content {
+  width: 1024px;
+  margin: 0 auto;
+}
+#footer .footer-top {
+  background: #092e55;
+  padding: 21px 0px 15px 0px;
+  font-size: 12px;
+  font-family: "Arial";
+  color: #d6d6d6;
+  margin-top: 15px;
+}
+#footer .footer-top h5 {
+  color: #d6d6d6;
+  font-family: "OpenSansBold";
+  font-size: 14px;
+  margin: 0px 0px 15px 0px;
+}
+#footer .content p {
+  margin: 0;
+  color: #D6D6D6;
+  line-height: 20px;
+  font-family: "Arial";
+  font-size: 12px;
+}
+#footer .footer-top .aboutus-desc {
+  float: left;
+  width: 255px;
+  margin: 0px 40px 0px 0px;
+}
+#footer .footer-top .partners {
+  float: left;
+  width: 270px;
+  margin: 0px 40px 0px -20px;
+}
+#footer .footer-top .partners .Vmware {
+	width:129px;
+	height:95px;
+	float:left;
+}
+#footer .footer-top .partners .Vmware img {
+	width:129px;
+	height:95px;
+}
+#footer .footer-top .partners .HP {
+	width:129px;
+	height:95px;
+	float:left;
+}
+#footer .footer-top .partners .HP img {
+  width: 150px;
+  height: 77px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+#footer .footer-top .partners .IBM {
+	width:129px;
+	height:95px;
+	float:left;
+}
+#footer .footer-top .partners .IBM img {
+  width: 288px;
+  height: 96px;
+  margin-top: 7px;
+}
+#footer .footer-top .socmed {
+  float: left;
+  width: 127px;
+  margin: 0px 33px 0px 0px;
+}
+#footer .footer-top .contact-desc {
+  float: left;
+  width: 222px;
+}
+.clear {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-bottom {
+  background: #03031B;
+  padding: 10px 0;
+}
+#footer .footer-bottom a {
+  text-decoration:none;
+  color:#999;
+}
+#footer .content {
+  width: 980px;
+}
+.content {
+  width: 1024px;
+  margin: 0 auto;
+}
+#footer .footer-bottom p {
+  font-family: "Arial";
+  font-size: 10px;
+  color: #606060;
+  line-height: 13px;
+  letter-spacing: 0;
+}
+#footer .content p {
+  margin: 0;
+}
+
+#footer .footer-bottom .right {
+  color: #606060;
+  font-size: 10px;
+  letter-spacing: 0;
+  float: right;
+  text-decoration: none;
+}
+.right {
+  float: right;
+  display: inline;
+}
