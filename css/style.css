@@ -162,7 +162,7 @@ width: 30%;
   left: 0;
   right: 0;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -697,6 +697,32 @@ header{
 
 /*---------BODY*/
 
+#aboutuswrapper  {
+  background-color: rgb(242,248,255);
+  position: relative;
+  margin-top: -200px;
+}
+
+#aboutuswrapper h3 {
+font-size: 60px;
+}
+
+.aboutuscontainer > p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 480px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  padding: 150px 50px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  color: #4A4A4A;
+}
+
+
 #article-wrapper{
   height: 100%;
   padding: 50px 0px;
@@ -705,61 +731,105 @@ header{
   flex-wrap: wrap;
   width: 100%;
   top:0;
-  margin-top: -200px;
 }
 
-.text{
+#banner > .text{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 55px;
+  font-size: 40px;
   color: rgba(255,255,255,1);
   padding: 20px;
+}
+
+.clients-box img:nth-child(2) {
+    display: none;
 }
 
 #ourClients{
   height: auto;
 }
 
+.expertisecontainer p{
+  max-width: 480px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
 #bottom_content_wrapper{
+  position: relative;
   display: flex;
   padding: 0;
   flex-wrap: wrap;
   margin: 0;
+  height: 1000px;
 }
 
-.box{
-  width: 100%;
-  padding: 0;
+#bottom_content_wrapper h2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#bottom_content_wrapper .box > .div-seperator{
+  max-width: 480px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 200px auto;
+}
+
+.box ul{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 250px auto;
+  max-width: 480px;
 }
 
 .box p{
-  padding: 0px 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 450px 20px;
+}
+
+#contactuswrapper{
+  max-width: 480px;
+  position: absolute;
+  margin: 700px auto;
+}
+
+#contactuswrapper .contactuscontainer > p {
+  width: 430px;
+  position: absolute;
+  margin: auto;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
 }
 
 /*-------FOOTER*/
 
-.subfooter .socmed{
-  width: 50%;
+
+#footer-wrapper .subfooter > .socmed a{
+  margin: 35px auto;
 }
 
-.socmed i{
-  margin: 0 7px;
+#footer-wrapper .subfooter > .socmed{
+  width: 20%;
 }
 
-.flex-wrapper{
-  flex-wrap: wrap;
-}
 
 .subfooter .menu-desc ul{
   font-size: 11px;
   padding: 20px;
+  display: flex;
+  width: 365px;
 }
 
-.flex-wrapper p {
-  font-size: 10px;
-  color: white;
-  padding: 0px;
-}
 
 } /*-------- END OF PHONE STYLES*/
 
@@ -777,9 +847,16 @@ header{
   margin: 0;
 }
 
-.background-image-text{
-  width: 77%;
+#background-image{
+  height: 500px;
+  position: relative;
+}
+
+#background-image .background-image-text{
   font-size: 25px;
+  position: relative;
+  top: 55px;
+  width: 75%;
 }
 
 .background-image-text span{
@@ -788,6 +865,16 @@ header{
 
 .header-menu ul li a{
   font-size: 12px;
+}
+
+#aboutuswrapper h3{
+  font-size: 60px;
+}
+
+#aboutuswrapper p{
+  max-width: 768px;
+  padding: 80px 20px;
+  font-size: 15px;
 }
 
 #article-wrapper{
@@ -824,17 +911,40 @@ header{
   height: auto;
 }
 
+#bottom_content_wrapper .box:nth-child(1){
+  width: 100%;
+}
+
+#bottom_content_wrapper .box:nth-child(2){
+  position: absolute;
+  display: none;
+}
+
+#bottom_content_wrapper h2 {
+  width: 100%;
+}
+
+#bottom_content_wrapper .partner-box{
+  margin: 50px auto;
+}
+
+#bottom_content_wrapper img {
+  width: 100%;
+}
+
+#contactuswrapper{
+  padding: 50px 0px;
+}
+
 .box > img{
   display: none;
 }
 
-#bottom_content_wrapper{
-  margin: 0;
-}
-
-.box {
-  width: 100%;
-  padding: 65px;
+.expertisecontainer p{
+  max-width: 768px;
+  padding: 20px;
+  font-size: 15px;
+  line-height: 46px;
 }
 
 .subfooter .socmed{
@@ -853,8 +963,14 @@ header{
   margin-left: 25px;
 }
 
+#aboutuswrapper p{
+  font-size: 15px;
+  padding: 35px;
+  margin-top: 100px;
+}
+
 #article-wrapper{
-  padding: 0px;
+  padding-top: 100px;
 }
 
 #article-wrapper .article-box{
@@ -894,4 +1010,18 @@ header{
 .partner-box img{
   padding: 20px;
 }
+
+
+.expertisecontainer p {
+  font-size: 20px;
+  padding: 30px;
+  line-height: 50px;
+}
+
+#bottom_content_wrapper{
+  padding-top: 100px;
+}
+
+#contactuswrapper p{
+  padding-bottom: 100px;
 }
