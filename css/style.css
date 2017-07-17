@@ -76,6 +76,9 @@ body {
 
 /*HEADER*/
 header{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
   padding: 35px;
   border-bottom: 3px solid rgb(23,17,43);
   height: 60px;
@@ -122,10 +125,10 @@ width: 30%;
 }
 
 .header-menu ul li a {
+	margin-top: 25px;
   text-decoration: none;
   color: rgb(3,3,27);
   align-content: center;
-  height: 100%;
   display: flex;
   letter-spacing: 3px;
   flex-wrap: wrap;
@@ -143,15 +146,16 @@ width: 30%;
 /*BACKGROUND IMAGE*/
 #background-image {
   position: relative;
-      max-width: 1920px;
-      height: 1000px;
-      background: transparent url("../images/technology-wallpaper-18.jpg");
-          background-size: auto auto;
-      overflow: hidden;
-      background-size: cover;
-      left: 0;
-      right: 0;
-      margin: auto;
+  max-width: 1920px;
+  height: 1000px;
+  background: transparent url("../images/technology-wallpaper-18.jpg");
+      background-size: auto auto;
+  overflow: hidden;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  margin: auto;
+	top: 130px;
 }
 
 #background-image:before{
@@ -198,14 +202,23 @@ width: 30%;
   margin: auto;
 }
 
-#aboutuswrapper h3 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 80px;
-  text-align: center;
-  padding-top: 120px;
+.aboutuscontainer{
+	padding: 100px 0px;
 }
 
-.aboutuscontainer > p {
+.hpbusinesspartner{
+	position: relative;
+	width: 100px;
+}
+
+#aboutuswrapper h3 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 36px;
+  text-align: center;
+  padding: 50px;
+}
+
+.aboutuscontainer > span {
   position: absolute;
   left: 0;
   right: 0;
@@ -214,7 +227,7 @@ width: 30%;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  padding-top: 150px;
+  padding-top: 50px;
   letter-spacing: 1.5px;
   line-height: 55px;
   color: #4A4A4A;
@@ -222,10 +235,8 @@ width: 30%;
 
 .aboutuscontainer > .div-seperator{
   position: absolute;
-  width: 100px;
   left: 0;
   right: 0;
-  margin: 35px auto;
 }
 
 
@@ -330,7 +341,7 @@ color: #D8D8D8;
 
   .text{
     position: relative;
-    height: 100%;
+		padding-top: 225px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 70px;
@@ -374,23 +385,40 @@ color: #D8D8D8;
 
 .clients-box img:nth-child(1){
   max-width: 150px;
+	height: 100px;
 }
 .clients-box img:nth-child(2){
   max-width: 230px;
+	height: 100px;
 }
 .clients-box img:nth-child(3){
   max-width: 200px;
+	height: 100px;
 }
 .clients-box img:nth-child(4){
   max-width: 250px;
+	height: 100px;
 }
 .clients-box img:nth-child(5){
   max-width: 250px;
+	height: 100px;
 }
 
 #expertisewrapper {
   position: relative;
   max-width: 1920px;
+}
+
+.flexwrapper{
+	display: flex;
+}
+
+.flexwrapper img {
+	height: 450px;
+	position: relative;
+	top: 60px;
+	left: 35px;
+	padding: 0px 50px;
 }
 
 .expertisecontainer {
@@ -411,13 +439,12 @@ font-size: 36px;
   left: 0;
   right: 0;
   margin: auto;
-  padding-bottom: 50px;
+  padding: 50px 50px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #4A4A4A;
   line-height: 40px;
-  margin-top: 50px;
 }
 
 
@@ -432,8 +459,9 @@ font-size: 36px;
 }
 
 .box{
-  width: 45%;
-  padding: 50px;
+	left: 0;
+	right: 0;
+	margin: 0px 50px;
 }
 
 #bottom_content_wrapper h2 {
@@ -462,43 +490,41 @@ display: flex;
 }
 
 .partner-box {
-  display: flex;
-  width: 500px;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 50px auto;
+	display: flex;
+	width: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 50px 0px;
+	justify-content: center;
 }
 
 .partner-box img:nth-child(1){
-filter: grayscale(100%);
-width: 50%;
-height: 200px;
+/*filter: grayscale(100%);*/
+height: 80px;
 }
 
 .partner-box img:nth-child(2){
-filter: grayscale(100%);
-height: 54px;
+/*filter: grayscale(100%);*/
+height: 55px;
+margin-left: 50px;
 }
 
 .partner-box img:nth-child(3){
-  filter: grayscale(100%);
-  height: 80px;
-  position: relative;
-  width: 250px;
-  left: -250px;
-  right: 0;
-  margin: auto;
-  top: 60px;
+	/*filter: grayscale(100%);*/
+	height: 80px;
+	margin-left: 50px;
 }
 
-.box img{
-  width: 100%;
-  padding: 20px;
+
+.hppartsimg1, .hppartsimg2, .hppartsimg3{
+	margin: 75px 0px;
+	max-width: 470px;
 }
+
 
 #contactuswrapper  {
-  padding-top: 50px;
+	padding: 150px 0px;
 }
 
 #contactuswrapper h3 {
@@ -538,17 +564,17 @@ height: 54px;
 }
 
 .subfooter .socmed {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 50%;
-  align-content: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 150px;
+	width: 50%;
 }
 
-.socmed a{
-  text-decoration: none;
-
+.subfooter .socmed a {
+	text-decoration: none;
 }
+
 
 .socmed i {
   color: rgba(255,255,255,0.8);
