@@ -219,11 +219,11 @@ width: 30%;
 }
 
 .aboutuscontainer > span {
-  position: absolute;
+	position: absolute;
   left: 0;
-  right: 0;
+  text-align: center;
   margin: auto;
-  max-width: 1200px;
+  padding: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -416,9 +416,10 @@ color: #D8D8D8;
 .flexwrapper img {
 	height: 450px;
 	position: relative;
-	top: 60px;
-	left: 35px;
-	padding: 0px 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 50px;
 }
 
 .expertisecontainer {
@@ -435,16 +436,15 @@ font-size: 36px;
 }
 
 .expertisecontainer p {
-  max-width: 1000px;
   left: 0;
   right: 0;
   margin: auto;
-  padding: 50px 50px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #4A4A4A;
   line-height: 40px;
+	padding: 20px;
 }
 
 
