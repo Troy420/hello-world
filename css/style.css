@@ -47,27 +47,17 @@ table {
 
 
 
-* {
-  padding:0;
-  margin:0;
-}
-
 html{
   font-family: 'Pontano Sans', sans-serif;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.8);
-}
 
 .main-wrapper{
   z-index: 3;
   position: relative;
   background: white;
   margin-bottom: 400px;
+	overflow-y: hidden;
 }
 
 #dropdown{
@@ -83,7 +73,7 @@ header{
   border-bottom: 3px solid rgb(23,17,43);
   height: 60px;
   display: flex;
-  background-color: rgba(220,230,242,0.4);
+  background-color: rgba(220,230,242,0.8);
 }
 
 
@@ -114,7 +104,7 @@ width: 30%;
 
 .header-menu ul{
 	width: 600px;
-	height: 100%;
+	margin-right: 60px;
 	display: flex;
 	float: right;
 }
@@ -370,19 +360,33 @@ color: #D8D8D8;
   padding-bottom: 30px;
 }
 
-
 .clients-box {
-  display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   justify-content: center;
 }
 
-.clients-box img{
-  padding: 20px;
-  filter: grayscale(100%);
+.clients-box p{
+	padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+	color: #4A4A4A;
+  font-weight: 600;
+  font-size: 20px;
+	text-transform: uppercase;
 }
 
+.hotellogistics img, .finance img, .mining img, .manufacturer img {
+	height: 100px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.hotellogistics, .finance, .mining, .manufacturer{
+	padding: 30px 0px;
+	margin: 30px auto;
+}
+/*
 .clients-box img:nth-child(1){
   max-width: 150px;
 	height: 100px;
@@ -403,6 +407,7 @@ color: #D8D8D8;
   max-width: 250px;
 	height: 100px;
 }
+*/
 
 #expertisewrapper {
   position: relative;
@@ -414,7 +419,7 @@ color: #D8D8D8;
 }
 
 .flexwrapper img {
-	height: 450px;
+	height: 400px;
 	position: relative;
 	left: 0;
 	right: 0;
@@ -525,6 +530,7 @@ margin-left: 50px;
 
 #contactuswrapper  {
 	padding: 150px 0px;
+	max-width: 1920px;
 }
 
 #contactuswrapper h3 {
@@ -599,18 +605,6 @@ margin-left: 50px;
   height: 100%;
 }
 
-.flex-wrapper{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  color: white;
-}
-
-.flex-wrapper p{
-  padding: 15px 60px;
-  font-size: 15px;
-}
 
 .subfooter .menu-desc ul {
   width: 100%;
@@ -639,22 +633,29 @@ margin-left: 50px;
 }
 
 
-.flex-wrapper p {
+.subfooter p {
   color: rgba(255,255,255,0.6);
   font-size: 0.8em;
   font-family: 'Montserrat', sans-serif;
+	padding: 15px 60px;
+	font-size: 15px;
 }
 
-.flex-wrapper a{
+.subfooter a{
   color: orangered;
 }
 
 
 
+
 /*---------MEDIA QUERIES*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
      /* start of phone styles */
+
+.main-wrapper{
+	overflow-x: hidden;
+}
 
 /*------------HEADER*/
 header{
@@ -666,11 +667,6 @@ header{
   position: relative;
 }
 
-.main-wrapper {
-  width: 479px;
-  overflow: hidden;
-}
-
 .header-menu, #background-image, .box img{
   display: none;
 }
@@ -680,9 +676,10 @@ header{
 }
 
 #logo img{
-  width: 145px;
-  background-color: rgba(220,230,242,0.4);
-  margin: 0;
+	width: 145px;
+  position: relative;
+  left: 0;
+  top: 0;
   }
 
 .three-panel{
@@ -690,6 +687,8 @@ header{
   display: flex;
   flex-wrap: wrap;
   z-index: 3;
+	position: relative;
+  left: -55px;
 }
 
 .three-panel:hover{
@@ -783,6 +782,8 @@ header{
   text-decoration: none;
   color: rgba(255,255,255,0.8);
   font-family: ‘Montserrat’, sans-serif;
+	top: 20px;
+  position: relative;
 }
 
 /*---------BODY*/
@@ -791,13 +792,15 @@ header{
   background-color: rgb(242,248,255);
   position: relative;
   margin-top: -200px;
+	height: 1400px;
+	width: auto;
 }
 
 #aboutuswrapper h3 {
 font-size: 60px;
 }
 
-.aboutuscontainer > p {
+.aboutuscontainer > span {
   position: absolute;
   left: 0;
   right: 0;
@@ -814,21 +817,45 @@ font-size: 60px;
 
 
 #article-wrapper{
-  height: 100%;
   padding: 50px 0px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   top:0;
+	width: auto;
+}
+
+#article-wrapper .article-box .box-content p{
+	font-size: 12px;
+}
+
+#banner{
+	width: auto;
 }
 
 #banner > .text{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 30px;
   color: rgba(255,255,255,1);
   padding: 20px;
+	top: 200px;
+}
+
+.flexwrapper img {
+	position: absolute;
+	display: none;
+}
+
+#expertisewrapper{
+	width: auto;
+}
+
+#expertisewrapper p {
+	font-size: 12px;
+  line-height: 40px;
+  letter-spacing: 0px;
+	text-align: center;
 }
 
 .clients-box img:nth-child(2) {
@@ -837,6 +864,7 @@ font-size: 60px;
 
 #ourClients{
   height: auto;
+	width: auto;
 }
 
 .expertisecontainer p{
@@ -849,18 +877,19 @@ font-size: 60px;
 
 #bottom_content_wrapper{
   position: relative;
+	width: auto;
   display: flex;
   padding: 0;
   flex-wrap: wrap;
   margin: 0;
-  height: 1000px;
+	height: 1100px;
 }
 
 #bottom_content_wrapper h2{
   position: absolute;
   left: 0;
   right: 0;
-  margin: auto;
+	font-size: 50px;
 }
 
 #bottom_content_wrapper .box > .div-seperator{
@@ -872,246 +901,82 @@ font-size: 60px;
 }
 
 .box ul{
-  position: absolute;
+	position: absolute;
   left: 0;
   right: 0;
   margin: 250px auto;
-  max-width: 480px;
+	font-size: 12px;
 }
 
 .box p{
   position: absolute;
   left: 0;
   right: 0;
-  margin: 450px 20px;
+  margin: 450px 40px;
+	font-size: 12px;
 }
 
 #contactuswrapper{
-  max-width: 480px;
-  position: absolute;
-  margin: 700px auto;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: 610px 0px;
+}
+
+#contactuswrapper h3{
+	padding-top: 30px;
 }
 
 #contactuswrapper .contactuscontainer > p {
-  width: 430px;
-  position: absolute;
   margin: auto;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 1.5px;
+	padding: 0px 30px;
 }
 
 /*-------FOOTER*/
 
-
-#footer-wrapper .subfooter > .socmed a{
-  margin: 35px auto;
-}
-
-#footer-wrapper .subfooter > .socmed{
-  width: 20%;
-}
-
-
-.subfooter .menu-desc ul{
-  font-size: 11px;
-  padding: 20px;
-  display: flex;
-  width: 365px;
-}
-
-
-} /*-------- END OF PHONE STYLES*/
-
-@media screen (min-width: 481px) and (max-width: 768px) {
-     /* start of medium tablet styles */
-.main-wrapper{
-  overflow: hidden;
-}
-
-header{
-  height: 52px;
-}
-
-#logo img {
-  margin: 0;
-}
-
-#background-image{
-  height: 500px;
-  position: relative;
-}
-
-#background-image .background-image-text{
-  font-size: 25px;
-  position: relative;
-  top: 55px;
-  width: 75%;
-}
-
-.background-image-text span{
-  font-size: 40px;
-}
-
-.header-menu ul li a{
-  font-size: 12px;
-}
-
-#aboutuswrapper h3{
-  font-size: 60px;
-}
-
-#aboutuswrapper p{
-  max-width: 768px;
-  padding: 80px 20px;
-  font-size: 15px;
-}
-
-#article-wrapper{
-  padding: 0px;
-}
-
-#article-wrapper .article-box{
-  padding: 0px;
-  margin-top: 50px;
-}
-
-.article-box i{
-  font-size: 65px;
-}
-
-.box-header h2{
-  font-size: 15px;
-}
-
-.box-header span{
-  font-size: 30px;
-}
-
-.box-content{
-  font-size: 15px;
-}
-
-.text{
-  padding: 20px;
-  font-size: 64px;
-}
-
-#ourClients{
-  height: auto;
-}
-
-#bottom_content_wrapper .box:nth-child(1){
-  width: 100%;
-}
-
-#bottom_content_wrapper .box:nth-child(2){
-  position: absolute;
-  display: none;
-}
-
-#bottom_content_wrapper h2 {
-  width: 100%;
-}
-
-#bottom_content_wrapper .partner-box{
-  margin: 50px auto;
-}
-
-#bottom_content_wrapper img {
-  width: 100%;
-}
-
-#contactuswrapper{
-  padding: 50px 0px;
-}
-
-.box > img{
-  display: none;
-}
-
-.expertisecontainer p{
-  max-width: 768px;
-  padding: 20px;
-  font-size: 15px;
-  line-height: 46px;
-}
-
-.subfooter .socmed{
-  width: 30%;
+#footer-wrapper{
+	width: auto;
 }
 
 .subfooter .menu-desc{
-  width: 70%;
-}
-}
-
-
-@media screen and (max-width: 991px) {
-     /* start of large tablet styles */
-#logo img{
-  margin-left: 25px;
+left: 0;
+right: 0;
+margin: auto;
+position: relative;
+width: 100%;
 }
 
-#aboutuswrapper p{
-  font-size: 15px;
-  padding: 35px;
-  margin-top: 100px;
+.subfooter .menu-desc ul{
+	position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#article-wrapper{
-  padding-top: 100px;
+.subfooter .menu-desc li{
+	padding:8px;
+	font-size: 12px;
+	margin-left: 10px;
 }
 
-#article-wrapper .article-box{
-  padding: 0px;
+.subfooter .socmed{
+	position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.text{
-  padding: 0px 40px;
-  margin: 0px 27px;
+.subfooter p{
+	font-size: 10px;
+  position: relative;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+	color: rgba(255,255,255,0.4);
 }
 
-#ourClients{
-  height: auto;
-}
-
-.box{
-  width: 50%;
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 20px;
-}
-
-.box img{
-  width: 420px;
-  height: 200px;
-}
-
-.box > img:nth-child(1){
-  height: 235px;
-}
-
-.box > img:nth-child(2){
-  height: 160px;
-}
-
-.partner-box img{
-  padding: 20px;
-}
-
-
-.expertisecontainer p {
-  font-size: 20px;
-  padding: 30px;
-  line-height: 50px;
-}
-
-#bottom_content_wrapper{
-  padding-top: 100px;
-}
-
-#contactuswrapper p{
-  padding-bottom: 100px;
-}
+} /*-------- END OF PHONE STYLES*/
