@@ -86,7 +86,18 @@ width: 30%;
 	z-index: 2;
 	position: absolute;
 	left: 50px;
-	top: 28px;
+	top: 20px;
+}
+
+#logo span {
+	font-family: 'Poppins', sans-serif;
+  color: rgb(25,41,87);
+  font-weight: 600;
+  position: absolute;
+  left: 45px;
+  right: 0;
+  margin: auto;
+  top: 100px;
 }
 
 #logo h1{
@@ -377,9 +388,11 @@ color: #D8D8D8;
 }
 
 .hotellogistics img, .finance img, .mining img, .manufacturer img {
-	height: 100px;
-	margin: 50px auto;
-	display: flex;
+	height: 60px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 50px 55px;
 }
 
 .hotellogistics, .finance, .mining, .manufacturer{
@@ -419,7 +432,7 @@ color: #D8D8D8;
 }
 
 .flexwrapper img {
-	height: 400px;
+	height: 350px;
 	position: relative;
 	left: 0;
 	right: 0;
@@ -607,14 +620,14 @@ margin-left: 50px;
 
 
 .subfooter .menu-desc ul {
-  width: 100%;
+	width: auto;
+	display: flex;
 }
 
 .subfooter .menu-desc li {
   list-style: none;
-  padding: 20px;
-  float: left;
-  text-align: center;
+  padding: 0px 30px;
+	margin: auto;
 }
 
 .menu-desc li > a{
@@ -675,12 +688,18 @@ header{
   width: 100%;
 }
 
+#logo span {
+	font-size: 10px;
+}
+
 #logo img{
 	width: 145px;
   position: relative;
   left: 0;
   top: 0;
   }
+
+
 
 .three-panel{
   width: 60px;
@@ -867,6 +886,10 @@ font-size: 60px;
 	width: auto;
 }
 
+.mining img:nth-child(4){
+	height: 30px;
+}
+
 .expertisecontainer p{
   max-width: 480px;
   padding: 20px;
@@ -954,11 +977,12 @@ width: 100%;
   left: 0;
   right: 0;
   margin: auto;
+	width: auto;
 }
 
 .subfooter .menu-desc li{
 	padding:8px;
-	font-size: 12px;
+	font-size: 10px;
 	margin-left: 10px;
 }
 
