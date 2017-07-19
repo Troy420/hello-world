@@ -680,7 +680,7 @@ header{
   position: relative;
 }
 
-.header-menu, #background-image, .box img{
+.header-menu, #background-image{
   display: none;
 }
 
@@ -861,9 +861,14 @@ font-size: 60px;
 	top: 200px;
 }
 
+.flexwrapper{
+	display: grid;
+}
+
 .flexwrapper img {
-	position: absolute;
-	display: none;
+	position: relative;
+  height: 200px;
+  padding: 30px;
 }
 
 #expertisewrapper{
@@ -875,10 +880,6 @@ font-size: 60px;
   line-height: 40px;
   letter-spacing: 0px;
 	text-align: center;
-}
-
-.clients-box img:nth-child(2) {
-    display: none;
 }
 
 #ourClients{
@@ -905,7 +906,7 @@ font-size: 60px;
   padding: 0;
   flex-wrap: wrap;
   margin: 0;
-	height: 1100px;
+	height: 1500px;
 }
 
 #bottom_content_wrapper h2{
@@ -921,6 +922,10 @@ font-size: 60px;
   left: 0;
   right: 0;
   margin: 200px auto;
+}
+
+.hppartsimg1, .hppartsimg2, .hppartsimg3{
+	display: none;
 }
 
 .box ul{
@@ -939,6 +944,19 @@ font-size: 60px;
 	font-size: 12px;
 }
 
+#bottom_content_wrapper .partner-box{
+	display: grid;
+}
+
+#bottom_content_wrapper .partner-box img{
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 20px auto;
+	top: 775px;
+}
+
+
 #contactuswrapper{
     width: auto;
     left: 0;
@@ -947,7 +965,7 @@ font-size: 60px;
 }
 
 #contactuswrapper h3{
-	padding-top: 30px;
+	padding-top: 100px;
 }
 
 #contactuswrapper .contactuscontainer > p {
