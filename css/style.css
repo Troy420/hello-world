@@ -129,6 +129,30 @@ html {
   background-color: rgba(220, 230, 242, 0.8);
 }
 
+
+/*-- 1.1 Header Slide Down Animation --*/
+
+.header-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-bottom: 3px solid rgb(23, 17, 43);
+  min-height: 100px;
+  background-color: rgba(220, 230, 242, 0.8);
+  animation: slideInDown 1s both;
+}
+
+@keyframes slideInDown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 .logo img {
   width: 12.5rem;
   margin-top: 5px;
@@ -532,6 +556,46 @@ i.sosa-gears {
   color: rgba(255, 255, 255, 0.6);
 }
 
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-indent: 100%;
+  z-index: 80;
+  border-radius: 30px;
+}
+
+#toTopHover {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background: rgb(23, 17, 43);
+  box-shadow: 2px 2px 6px #555;
+  opacity: 1 !important;
+}
+
+#toTopHover:after {
+  content: '';
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  width: 6px;
+  height: 6px;
+  display: block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 13px;
+  left: 12px;
+}
+
 
 /*-- MEDIA QUERIES -- */
 
@@ -547,6 +611,9 @@ i.sosa-gears {
   /*-- HEADER --*/
   .header-menu-wrapper, #background-image {
     display: none;
+  }
+  .header-animation {
+    position: initial;
   }
   .three-panel {
     width: 60px;
