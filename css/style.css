@@ -390,7 +390,8 @@ i.sosa-gears {
   margin: auto;
 }
 
-#expertise-wrapper .left-column, .right-column {
+#expertise-wrapper .left-column,
+#expertise-wrapper .right-column {
   margin-top: 50px;
 }
 
@@ -419,6 +420,14 @@ i.sosa-gears {
   flex-direction: row;
 }
 
+#mission-wrapper .left-column{
+  padding-left: 30px;
+}
+
+.left-column ul{
+  padding-left: 30px;
+}
+
 .left-column ul li {
   max-width: 135px;
   padding: 20px;
@@ -427,7 +436,7 @@ i.sosa-gears {
 .left-column p {
   line-height: 30px;
   letter-spacing: 0.1em;
-  padding: 50px 0;
+  padding: 50px 30px;
 }
 
 .partner-box {
@@ -439,7 +448,7 @@ i.sosa-gears {
   max-width: 500px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
 }
 
 .partner-box img:nth-child(2) {
@@ -447,7 +456,7 @@ i.sosa-gears {
   max-width: 200px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 30px;
 }
 
 .partner-box img:nth-child(3) {
@@ -474,6 +483,7 @@ i.sosa-gears {
   margin-top: 150px;
   font-size: 30px;
   font-weight: 600;
+  padding-left: 30px;
 }
 
 .contact-us-container p {
