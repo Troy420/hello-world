@@ -1,10 +1,3 @@
-# hello-world
-just a repository
+My First Website for a company
 
-Hello Gitters!
-
-I'm new to this Programming world!
-be nice to me.
-I love Bacon and Hot Dogs
-
-On second thought, lets make one!
+will be revamped soon!
