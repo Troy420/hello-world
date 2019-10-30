@@ -1,4 +1,84 @@
-  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,10 +87,19 @@
   vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -19,16 +108,21 @@ body {
   z-index: 5;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -38,10 +132,12 @@ table {
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
+.strong {
+  font-weight: bold;
+}
 /* Global CSS */
 
 #main-wrapper {
@@ -111,7 +207,6 @@ html {
   color: rgba(59, 128, 246, 1);
 }
 
-
 /*1. HEADER*/
 
 #header-main-wrapper {
@@ -128,7 +223,6 @@ html {
   min-height: 100px;
   background-color: rgba(220, 230, 242, 0.8);
 }
-
 
 /*-- 1.1 Header Slide Down Animation --*/
 
@@ -188,7 +282,6 @@ html {
   cursor: pointer;
 }
 
-
 /*2. Main Image*/
 
 #background-image {
@@ -198,7 +291,8 @@ html {
 .background-text-container {
   max-width: 1920px;
   min-height: 1000px;
-  background: transparent url("../images/new-banner-bg-2.jpg") center center no-repeat;
+  background: transparent url("../images/new-banner-bg-2.jpg") center center
+    no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -223,7 +317,6 @@ html {
   color: rgba(3, 3, 27, 1);
 }
 
-
 /*3. About Us*/
 
 #about-us-wrapper {
@@ -237,7 +330,7 @@ html {
 }
 
 .about-us-container h3 {
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 36px;
   padding: 50px;
   margin-top: 200px;
@@ -250,9 +343,8 @@ html {
   font-size: 20px;
   letter-spacing: 1.5px;
   line-height: 55px;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
-
 
 /* 4. Our Services */
 
@@ -275,7 +367,7 @@ html {
 .services-box i {
   font-size: 80px;
   justify-content: center;
-  color: #D8D8D8;
+  color: #d8d8d8;
   margin-top: 100px;
 }
 
@@ -296,7 +388,7 @@ html {
   letter-spacing: 1px;
   line-height: 30px;
   font-weight: 300;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 i.simpleline-wrench {
@@ -310,7 +402,6 @@ i.lineabasic-server {
 i.sosa-gears {
   color: rgba(59, 128, 246, 0.8);
 }
-
 
 /*-- 5. BANNER --*/
 
@@ -326,7 +417,7 @@ i.sosa-gears {
 }
 
 .text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 70px;
   margin: auto;
@@ -334,13 +425,12 @@ i.sosa-gears {
   color: rgba(255, 255, 255, 1);
 }
 
-
 /*-- 6. OUR CLIENTS --*/
 
 #clients-wrapper h2 {
   text-align: center;
   padding-top: 150px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 36px;
   padding-bottom: 30px;
 }
@@ -354,14 +444,17 @@ i.sosa-gears {
 .clients-box p {
   padding: 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  color: #4A4A4A;
+  font-family: "Poppins", sans-serif;
+  color: #4a4a4a;
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.hotellogistics img, .finance img, .mining img, .manufacturer img {
+.hotellogistics img,
+.finance img,
+.mining img,
+.manufacturer img {
   height: 60px;
   position: relative;
   left: 0;
@@ -369,11 +462,13 @@ i.sosa-gears {
   margin: 50px 55px;
 }
 
-.hotellogistics, .finance, .mining, .manufacturer {
+.hotellogistics,
+.finance,
+.mining,
+.manufacturer {
   padding: 30px 0px;
   margin: 30px auto;
 }
-
 
 /* 7. Expertise */
 
@@ -381,7 +476,7 @@ i.sosa-gears {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 150px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 36px;
 }
 
@@ -398,10 +493,9 @@ i.sosa-gears {
 #expertise-wrapper p {
   font-size: 20px;
   font-weight: 300;
-  color: #4A4A4A;
+  color: #4a4a4a;
   line-height: 40px;
 }
-
 
 /*-- 8. Mission --*/
 
@@ -411,7 +505,7 @@ i.sosa-gears {
   margin-top: 100px;
   font-size: 60px;
   text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 #mission-wrapper .left-column ul {
@@ -420,11 +514,11 @@ i.sosa-gears {
   flex-direction: row;
 }
 
-#mission-wrapper .left-column{
+#mission-wrapper .left-column {
   padding-left: 30px;
 }
 
-.left-column ul{
+.left-column ul {
   padding-left: 30px;
 }
 
@@ -453,7 +547,7 @@ i.sosa-gears {
 
 .partner-box img:nth-child(2) {
   min-height: 55px;
-  max-width: 200px;
+  max-width: 250px;
   position: absolute;
   bottom: 0;
   left: 30px;
@@ -467,11 +561,11 @@ i.sosa-gears {
   right: 0;
 }
 
-.hppartsimg2, .hppartsimg3 {
+.hppartsimg2,
+.hppartsimg3 {
   max-width: 500px;
   margin-top: 130px;
 }
-
 
 /* 9. Contact Us */
 
@@ -491,7 +585,6 @@ i.sosa-gears {
   font-weight: 300;
 }
 
-
 /* 10. Footer */
 
 #footer-wrapper {
@@ -499,7 +592,7 @@ i.sosa-gears {
 }
 
 .footer-container {
-  background: url('../images/footer-background-2.jpg') top center fixed;
+  background: url("../images/footer-background-2.jpg") top center fixed;
   background-size: cover;
   min-height: 250px;
   max-width: 1920px;
@@ -542,7 +635,9 @@ i.sosa-gears {
   margin: 0 0 15px 80px;
 }
 
-.socmed, .menu-footer, .copyright {
+.socmed,
+.menu-footer,
+.copyright {
   min-height: 150px;
 }
 
@@ -593,7 +688,7 @@ i.sosa-gears {
 }
 
 #toTopHover:after {
-  content: '';
+  content: "";
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   width: 6px;
@@ -605,7 +700,6 @@ i.sosa-gears {
   top: 13px;
   left: 12px;
 }
-
 
 /*-- MEDIA QUERIES -- */
 
@@ -619,7 +713,8 @@ i.sosa-gears {
     overflow-x: hidden;
   }
   /*-- HEADER --*/
-  .header-menu-wrapper, #background-image {
+  .header-menu-wrapper,
+  #background-image {
     display: none;
   }
   .header-animation {
@@ -658,7 +753,7 @@ i.sosa-gears {
   }
   #dropdown ul {
     width: 100%;
-    background: url('../images/technology-wallpaper-18.jpg');
+    background: url("../images/technology-wallpaper-18.jpg");
     background-size: cover;
   }
   .is-open {
@@ -668,7 +763,7 @@ i.sosa-gears {
     0% {
       opacity: 0;
       transform: translateY(-200px);
-      top: -200px
+      top: -200px;
     }
     100% {
       opacity: 1;
@@ -684,7 +779,7 @@ i.sosa-gears {
     100% {
       opacity: 0;
       transform: translateY(-200px);
-      top: -200px
+      top: -200px;
     }
     0% {
       transform: translateY(0px);
@@ -739,7 +834,10 @@ i.sosa-gears {
   .finance img:nth-child(4) {
     display: none;
   }
-  .hotellogistics img, .finance img, .mining img, .manufacturer img {
+  .hotellogistics img,
+  .finance img,
+  .mining img,
+  .manufacturer img {
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -771,7 +869,9 @@ i.sosa-gears {
     min-height: 300px;
     flex-direction: column;
   }
-  .partner-box img:nth-child(1), .partner-box img:nth-child(2), .partner-box img:nth-child(3) {
+  .partner-box img:nth-child(1),
+  .partner-box img:nth-child(2),
+  .partner-box img:nth-child(3) {
     max-width: 200px;
     position: initial;
     margin: auto;
@@ -784,7 +884,9 @@ i.sosa-gears {
     font-size: 13px;
   }
   /*-- Footer --*/
-  #footer-wrapper, .footer-container, .footer-overlay {
+  #footer-wrapper,
+  .footer-container,
+  .footer-overlay {
     min-height: 500px;
   }
   .menu-footer ul {
@@ -799,4 +901,4 @@ i.sosa-gears {
     padding: 40px 20px 0 20px;
     text-align: center;
   }
-  /*-------- END OF PHONE STYLES*/
+}
